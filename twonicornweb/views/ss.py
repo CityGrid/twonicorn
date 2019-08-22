@@ -190,7 +190,7 @@ def format_user_input(request, ui):
         ui.job_review_name = job_base_name + '_Build-review'
         ui.job_review_url = '{0}job/{1}'.format(ui.job_ci_base_url, ui.job_review_name)
     if ui.job_abs:
-        ui.job_abs_base_url = 'https://abs-{0}.dev.cs/'.format(ui.job_server)
+        ui.job_abs_base_url = 'https://abs-{0}.test.cs/'.format(ui.job_server)
         ui.job_abs_name = '{0}_{1}_Run'.format(ui.job_prefix, ui.git_repo_name.capitalize())
         ui.job_abs_url = '{0}job/{1}'.format(ui.job_abs_base_url, ui.job_abs_name)
 
